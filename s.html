@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.nope {background-color: grey;}
+		.yes {background-color: green;}
+	</style>
+</head>
+<body>
+	
+	<table>
+		<thead>
+			<tr>
+				<td>数组长度范围</td>
+				<td>"new Array"</td>
+				<td>"[]"</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>0<=size<=~1000</td>
+				<td class="yes">Yes!Faster</td>
+				<td class="nope">Nope</td>
+			</tr>
+			<tr>
+				<td>size > ~1000</td>
+				<td class="nope">Nope</td>
+				<td class="yes">Yes!Faster</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
