@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PhotoGallery</title>
+	<link rel="stylesheet" href="PhotoGallery.css" type="text/css">
+	<script src="PhotoGallery.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<nav>
+				<ul class="slideName">
+					<li>
+						<a href="1.jpg" title="design your home" onclick="changePic(this);return false;">Home</a>
+					</li>
+					<li>
+						<a href="2.jpg" title="design a building" onclick="changePic(this);return false;">Modern Building</a>
+					</li>
+					<li>
+						<a href="3.jpg" title="a metal piece" onclick="changePic(this);return false;">Metal Piece</a>
+					</li>
+					<li>
+						<a href="4.jpg" title="this is a map" onclick="changePic(this);return false;">Map</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="slide clearfix">
+				<div class="slider">
+					<img src="1.jpg" id="placeholder" alt="First active slider image" />
+				</div>
+			</div>
+			<div class="description">
+				<p id="description">This is a picture for Home</p>
+			</div>
+		</main>
+		<footer>
+			<span class="fl">&copy;wavejs.com</span><span class="fr"><a href="https://www.wavejs.com">Find more content</a></span>
+		</footer>
+	</div>
+	
+</body>
+</html>
